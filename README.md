@@ -1,5 +1,8 @@
 # Windows10GamingFocus
 This is A FORK Based On ChrisTitusTech that's foucus on debloat and optimize windows 10 for the lowest latency and best gaming experience, the Ultimate Windows 10 Script is a creation from multiple debloat scripts and gists from github. I also added Chocolatey and other tools to the script that I install on every machine.
+
+Remember before running to enable PowerShell execution: ```Set-ExecutionPolicy Unrestricted --Force```
+
 ```
 Warrning: I am NOT responsible for what you do to your Devices/Systems, so follow these instructions at your own risk. Make sure you know what you're doing, it's best to understand the process rather than just copy and paste commands and such.
 ```
@@ -187,7 +190,7 @@ Option to Enable & Install Or Disable & Uninstall Microsoft OneDrive
 - Adjusting visual effects for performance.
 - Enabling NumLock after startup.
 - Enabling Dark Mode
-- Stopping Edge from taking over as the default .PDF viewer 
+- Stopping Edge from taking over as the default .PDF viewer
 - Showing known file extensions.
 - Hiding hidden files.
 - Hiding sync provider notifications.
@@ -266,7 +269,7 @@ Option to Enable & Install Or Disable & Uninstall Microsoft OneDrive
 
 - Kindly note that if you choose to disable Microsoft Store and WSAPPX Service and wanted to enable it again, you have to run the script with this setting enabled then restart pc and rerun it again with the same settings to get Microsoft Store back! it a limitition of windows 10 as this registry tweak needs restart to take effect before script is trying to install microsoft store!
 - When disabling Microsoft Store & WSAPPX Service, This PC Properties will only be accessible from File Explorer!
-- disabling "Microsoft Software Protection Platform Service" will render microsoft activation Service not active hence any microsoft apps, windows, office, etc will show not activated state! 
+- disabling "Microsoft Software Protection Platform Service" will render microsoft activation Service not active hence any microsoft apps, windows, office, etc will show not activated state!
 
 # How To Use!
 
@@ -286,7 +289,7 @@ To enable Action Center, put the following into Powershell run As Administrator!
 ```
 Write-Host "Enabling Action Center..."
 	Remove-ItemProperty -Path "HKCU:\SOFTWARE\Policies\Microsoft\Windows\Explorer" -Name "DisableNotificationCenter" -ErrorAction SilentlyContinue
-	Remove-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\PushNotifications" -Name "ToastEnabled" -ErrorAction SilentlyContinue 
+	Remove-ItemProperty -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\PushNotifications" -Name "ToastEnabled" -ErrorAction SilentlyContinue
 	Write-Host "Done - Reverted to Stock Settings"
 ```
 ## Modifications
